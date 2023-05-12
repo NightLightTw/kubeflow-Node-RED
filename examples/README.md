@@ -19,6 +19,9 @@ Simply to run the following command to build node-red image
 To run the container image, use 
 
 ```
+KUBEFLOW_HOST=<your-kubeflow-instance-endpoint> \
+KUBEFLOW_USERNAME=<your-username-account> \
+KUBEFLOW_PASSWORD=<your-password> \
 ./run.sh <example-args>
 ```
 
