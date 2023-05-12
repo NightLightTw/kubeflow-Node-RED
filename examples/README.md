@@ -27,7 +27,7 @@ which would mount the current folder (i.e. ./example) onto the containers. We to
 The example-args allows you to specify which example you want to run, for example
 
 ```
-./run 0.helloworld
+./run.sh 0.helloworld
 ```
 
 would run the `0.helloworld` example.
