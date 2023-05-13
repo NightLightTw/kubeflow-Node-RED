@@ -42,10 +42,9 @@ def random_suffix() -> string:
 with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie"]) as api_client:
     # Create an instance of the API class
     api_instance = kfp_server_api.PipelineUploadServiceApi(api_client) 
-    uploadfile='<change yours yaml path>'
+    uploadfile='<change yours>' # The yaml file in your local path.
     name='pipeline-' + random_suffix()
-    description='<change yours>'
-    namespace = '<change yours>'
+    description='<change yours>' # str | The description of pipeline.
     try:
         api_response = api_instance.upload_pipeline(uploadfile, name=name, description=description)
         print(api_response)

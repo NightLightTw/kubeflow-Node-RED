@@ -43,7 +43,8 @@ with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie
     experiment_id = '<change yours>' # str | The ID of the experiment to be deleted.
 
     try:
-        # Deletes an experiment without deleting the experiment's runs and recurring  runs. To avoid unexpected behaviors, delete an experiment's runs and recurring  runs before deleting the experiment.
+        # Deletes an experiment without deleting the experiment's runs and recurring  runs.
+        # To avoid unexpected behaviors, delete an experiment's runs and recurring  runs before deleting the experiment.
         api_response = api_instance.delete_experiment(experiment_id)
         pprint(api_response)
     except ApiException as e:

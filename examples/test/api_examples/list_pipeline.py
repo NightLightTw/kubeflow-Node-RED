@@ -1,6 +1,5 @@
 from __future__ import print_function
 import string
-import random
 import time
 import kfp_server_api
 import os
@@ -35,9 +34,6 @@ configuration.debug = True
 
 namespaces = retrieve_namespaces(host, auth_session)
 #print("available namespace: {}".format(namespaces))
-
-def random_suffix() -> string:
-    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=10))
 
 # Enter a context with an instance of the API client
 with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie"]) as api_client:

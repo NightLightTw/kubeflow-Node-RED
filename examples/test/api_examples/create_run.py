@@ -39,10 +39,10 @@ namespaces = retrieve_namespaces(host, auth_session)
 with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie"]) as api_client:
     # Create an instance of the API class
     api_instance = kfp_server_api.RunServiceApi(api_client)
-    pipeline_id = '<change yours>'
-    experiment_id = '<change yours>'
-    display_name = '<change yours>'
-    description = '<change yours>'
+    pipeline_id = '<change yours>' # str | The ID of the pipeline.
+    experiment_id = '<change yours>' # str | The ID of the experiment.
+    display_name = '<change yours>' # str | The name of the run to be create.
+    description = '<change yours>' # str | The description of run.
     pipeline_spec = kfp_server_api.ApiPipelineSpec(pipeline_id=pipeline_id)
     resource_reference_key_id = namespaces[0]
     resource_references=[kfp_server_api.models.ApiResourceReference(

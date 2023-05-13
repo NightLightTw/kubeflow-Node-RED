@@ -46,7 +46,7 @@ with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie
         output = api_response.pipeline_runtime.workflow_manifest
         output = json.loads(output)
         nodes = output['status']['nodes']
-        conditions = output['status']['conditions'] #可判斷是否完成
+        conditions = output['status']['conditions'] # Comfirm completion.
         output_value = None
 
         for node_id, node in nodes.items():

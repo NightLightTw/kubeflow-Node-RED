@@ -40,8 +40,8 @@ namespaces = retrieve_namespaces(host, auth_session)
 with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie"]) as api_client:
     # Create an instance of the API class
     api_instance = kfp_server_api.ExperimentServiceApi(api_client)
-    name="<change yours>"
-    description='<change yours>'
+    name="<change yours>" # str | The ID of the name to be create.
+    description='<change yours>' # str | The description experiment.
     resource_reference_key_id = namespaces[0]
     resource_references=[kfp_server_api.models.ApiResourceReference(
     key=kfp_server_api.models.ApiResourceKey(
