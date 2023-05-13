@@ -102,12 +102,11 @@ with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie
 
             try:
                 nodes = output['status']['nodes']
-                conditions = output['status']['conditions'] #可判斷是否完成
+                conditions = output['status']['conditions'] # Comfirm completion.
                 
             except KeyError:
                 nodes = {}
                 conditions = []
-                #print("Error: 'status', 'nodes' or 'conditions' keys not found in the output.")
 
             output_value = None
             Completed_flag = conditions[1]['status'] if len(conditions) > 1 else False
@@ -116,7 +115,6 @@ with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie
             print("Exception when calling RunServiceApi->get_run: %s\n" % e)
             break
 
-        #print(conditions)
         if not Completed_flag:
             print("Pipeline is still running. Waiting...")
             time.sleep(polling_interval-1)
