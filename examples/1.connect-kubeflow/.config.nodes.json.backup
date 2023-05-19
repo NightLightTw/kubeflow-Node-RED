@@ -423,46 +423,5 @@
                 "file": "/usr/src/node-red/node_modules/node-red-contrib-pythonshell/src/pythonshell.js"
             }
         }
-    },
-    "node-red-contrib-pythonshell-custom": {
-        "name": "node-red-contrib-pythonshell-custom",
-        "version": "1.0.0",
-        "local": true,
-        "user": false,
-        "nodes": {
-            "decisionTree": {
-                "name": "decisionTree",
-                "types": [
-                    "decisionTree"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-pythonshell-custom",
-                "file": "/data/1.connect-kubeflow/node_modules/nodepipe/decisiontree.js"
-            },
-            "randomForest": {
-                "name": "randomForest",
-                "types": [
-                    "randomForest"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-pythonshell-custom",
-                "file": "/data/1.connect-kubeflow/node_modules/nodepipe/randomforest.js"
-            },
-            "logisticRegression": {
-                "name": "logisticRegression",
-                "types": [
-                    "logisticRegression"
-                ],
-                "enabled": true,
-                "local": true,
-                "user": false,
-                "module": "node-red-contrib-pythonshell-custom",
-                "file": "/data/1.connect-kubeflow/node_modules/nodepipe/logisticregression.js"
-            }
-        }
     }
 }

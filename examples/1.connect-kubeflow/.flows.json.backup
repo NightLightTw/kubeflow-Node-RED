@@ -213,7 +213,7 @@
         "type": "pythonshell in",
         "z": "34d396e7c091c5fd",
         "name": "kfp python",
-        "pyfile": "/data/test/run_pipeline.py",
+        "pyfile": "/data/test/list_pipeline.py",
         "virtualenv": "",
         "continuous": true,
         "stdInData": false,
