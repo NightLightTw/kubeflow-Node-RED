@@ -1,4 +1,6 @@
 # kube-node-red(en)
+[![hackmd-github-sync-badge](https://hackmd.io/cocSOGQMR-qzo7DHdwgRsQ/badge)](https://hackmd.io/cocSOGQMR-qzo7DHdwgRsQ)
+
 Kube-node-red is aiming to integrate Kubeflow/Kubebeters with node-red, leveraging node-red's low-code modules, and using Kubeflow resources (e.g. Kubeflow pipeline, Kserve) to enhance its AI/ML ability.
 [![demo](https://img.youtube.com/vi/bkwSw4pvdQ4/maxresdefault.jpg)](https://youtu.be/bkwSw4pvdQ4)
 
