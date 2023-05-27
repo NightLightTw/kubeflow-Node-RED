@@ -1,16 +1,13 @@
-
 # kube-node-red(en)
 Kube-node-red is aiming to integrate Kubeflow/Kubebeters with node-red, leveraging node-red's low-code modules, and using Kubeflow resources (e.g. Kubeflow pipeline, Kserve) to enhance its AI/ML ability.
+[![demo](https://img.youtube.com/vi/bkwSw4pvdQ4/maxresdefault.jpg)](https://youtu.be/bkwSw4pvdQ4)
 
-{%youtube bkwSw4pvdQ4 %}
-## Catalog
-[TOC]
 ## reference
 https://github.com/NightLightTw/kubeflow-Node-RED/tree/main
 
 https://github.com/kubeflow/pipelines/tree/1.8.21/backend/api/python_http_client
 
-[Kubeflow-Node-red implementation Random Forest training flo] (https://hackmd.io/@Nhi7So-lTz2m5R6pHyCLcA/Sk1eZFTbh)
+[Kubeflow-Node-red implementation Random Forest training flo](https://hackmd.io/@Nhi7So-lTz2m5R6pHyCLcA/Sk1eZFTbh)
 
 
 # Usage instruction
@@ -39,9 +36,8 @@ KUBEFLOW_USERNAME=<your-username-account> \
 KUBEFLOW_PASSWORD=<your-password> \
 ./run.sh <example-index>
 ```
-:::info
-Here <example-index>please use 1.connect-kubeflow
-:::
+> **Info:** Here <example-index>please use 1.connect-kubeflow
+        
 ## User interface
 
 1. then you can go to UI, check it out: http://127.0.0.1:1880/
@@ -52,9 +48,7 @@ Here <example-index>please use 1.connect-kubeflow
 
 3. switch different pipelines and press the time stamp button to trigger the flow process
 ![](https://hackmd.io/_uploads/Byn7JnEBn.png)
-:::warning
-If the environment variable does not work, please fill in the account password directly in the python file
-:::
+> **Info:** If the environment variable does not work, please fill in the account password directly in the python file
 ## Only test python files to interact with kubeflow
 ```
 # Open another terminal and check docker status
@@ -68,9 +62,7 @@ python3 <file-name>
 ```
 
 You can test the file in api_example
-:::warning
-Some of these files require a custom name, description, or assigned id in <change yours>
-:::
+> **Info:** Some of these files require a custom name, description, or assigned id in <change yours>
 
 ## possible problems&solution
 Q1: MissingSchema Invalid URL ''
@@ -94,11 +86,12 @@ password = "123456"
 Please refer to [Kubeflow implementation：add Random Forest algorithm](https://hackmd.io/@Nhi7So-lTz2m5R6pHyCLcA/Sk1eZFTbh)
 
 ### take changing randomForest.py as an example
-:::warning
+
 Modify using your own yaml file path
-Line 66: uploadfile='pipelines/only_randomforest.yaml'
-Line 122~129 use json parser for filtering different outputs from get_run() 
-:::
+> **Info:** Line 66: uploadfile='pipelines/only_randomforest.yaml'
+
+> **Info:** Line 122~129 use json parser for filtering different outputs from get_run() 
+
 ```python=
 from __future__ import print_function
 
