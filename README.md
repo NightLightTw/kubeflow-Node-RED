@@ -1,10 +1,13 @@
-# kube-node-red(en)
+# Kube-node-red(en)
 [![hackmd-github-sync-badge](https://hackmd.io/cocSOGQMR-qzo7DHdwgRsQ/badge)](https://hackmd.io/cocSOGQMR-qzo7DHdwgRsQ)
+## Architecture
+![5A0ECFB3-D5AC-4A89-8AD5-14696A9E0449](https://github.com/NightLightTw/kubeflow-Node-RED/assets/78789817/7cce84cf-a4df-47a6-9992-9412bc70819b)
 
+## Illustrate
 Kube-node-red is aiming to integrate Kubeflow/Kubebeters with node-red, leveraging node-red's low-code modules, and using Kubeflow resources (e.g. Kubeflow pipeline, Kserve) to enhance its AI/ML ability.
 [![demo](https://img.youtube.com/vi/bkwSw4pvdQ4/maxresdefault.jpg)](https://youtu.be/bkwSw4pvdQ4)
 
-## reference
+## Reference
 https://github.com/NightLightTw/kubeflow-Node-RED/tree/main
 
 https://github.com/kubeflow/pipelines/tree/1.8.21/backend/api/python_http_client
@@ -87,7 +90,7 @@ password = "123456"
 ### custom make pipeline’s yaml file
 Please refer to [Kubeflow implementation：add Random Forest algorithm](https://hackmd.io/@Nhi7So-lTz2m5R6pHyCLcA/Sk1eZFTbh)
 
-### take changing randomForest.py as an example
+### Take changing randomForest.py as an example
 
 Modify using your own yaml file path
 > **Info:** Line 66: uploadfile='pipelines/only_randomforest.yaml'
@@ -228,7 +231,7 @@ with kfp_server_api.ApiClient(configuration, cookie=auth_session["session_cookie
         print("Parameter not found.")
         print(nodes)
 ```
-### test python file
+### Test python file
 ```
 #ensure dependency items
 pip install kfp
