@@ -5,7 +5,7 @@ Kube-node-red is aiming to integrate Kubeflow/Kubebeters with node-red, leveragi
 ## Architecture
 ![5A0ECFB3-D5AC-4A89-8AD5-14696A9E0449](https://github.com/NightLightTw/kubeflow-Node-RED/assets/78789817/7cce84cf-a4df-47a6-9992-9412bc70819b)
 ## Demo
-[![demo](https://img.youtube.com/vi/bkwSw4pvdQ4/maxresdefault.jpg)](https://youtu.be/bkwSw4pvdQ4)
+[![demo](https://img.youtube.com/vi/72tXYl6FcvU/maxresdefault.jpg)](https://youtu.be/72tXYl6FcvU)
 
 ## Reference
 https://github.com/NightLightTw/kubeflow-Node-RED/tree/main
