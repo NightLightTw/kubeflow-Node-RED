@@ -1,10 +1,10 @@
 # Kube-node-red(en)
 [![hackmd-github-sync-badge](https://hackmd.io/cocSOGQMR-qzo7DHdwgRsQ/badge)](https://hackmd.io/cocSOGQMR-qzo7DHdwgRsQ)
+
+Kube-node-red is aiming to integrate Kubeflow/Kubebeters with node-red, leveraging node-red's low-code modules, and using Kubeflow resources (e.g. Kubeflow pipeline, Kserve) to enhance its AI/ML ability.
 ## Architecture
 ![5A0ECFB3-D5AC-4A89-8AD5-14696A9E0449](https://github.com/NightLightTw/kubeflow-Node-RED/assets/78789817/7cce84cf-a4df-47a6-9992-9412bc70819b)
-
-## Illustrate
-Kube-node-red is aiming to integrate Kubeflow/Kubebeters with node-red, leveraging node-red's low-code modules, and using Kubeflow resources (e.g. Kubeflow pipeline, Kserve) to enhance its AI/ML ability.
+## Demo
 [![demo](https://img.youtube.com/vi/bkwSw4pvdQ4/maxresdefault.jpg)](https://youtu.be/bkwSw4pvdQ4)
 
 ## Reference
